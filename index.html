@@ -261,45 +261,6 @@
 </script>
 
 
-
-<script>
-  // Smooth scroll & clean URL (e.g., /about instead of #about)
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const id = this.getAttribute('href').substring(1);
-      const target = document.getElementById(id);
-      if (target) {
-        window.scrollTo({
-          top: target.offsetTop - 60,
-          behavior: 'smooth'
-        });
-        // Update URL to /about instead of #about
-        history.pushState(null, '', '/' + id);
-      }
-    });
-  });
-
-  // On page load, scroll to section if URL is like /about
-  window.addEventListener('DOMContentLoaded', () => {
-    const path = window.location.pathname.slice(1); // remove leading "/"
-    const section = document.getElementById(path);
-    if (section) {
-      setTimeout(() => {
-        window.scrollTo({
-          top: section.offsetTop - 60,
-          behavior: 'smooth'
-        });
-      }, 100);
-    }
-  });
-</script>
-
-
-
-
-
-
 <script>
   // Disable Right Click
   document.addEventListener("contextmenu", function (e) {
