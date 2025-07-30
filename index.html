@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Zipline Education</title>
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Ionicons -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+<!-- SwiperJS CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/animation.css" />
+<link rel="stylesheet" href="css/media_queries.css" />
+
+
+  <!-- Custom JS -->
+  <script defer src="js/script.js"></script>
+
+</head>
+<body>
+<header>
+  <a href="#home" class="logo-container">
+    <div class="logo-circle">
+      <img src="./img/logo.png" alt="Zipline Logo" />
+    </div>
+    <span class="logo-text">Zipline Education</span>
+  </a>
+  <nav id="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hamburger" onclick="toggleMenu()">
+  <i class="fas fa-bars"></i>
+</div>
+
+</header>
+
+<main>
+
+  <!-- Hero Section -->
+<section class="hero" id="home">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="./img/hero-video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="hero-overlay">
+    <h1>Your Gateway to Global Education</h1>
+    <p>
+      We help students achieve their study abroad dreams by offering personalized
+      guidance, strong university partnerships across the globe, and generous
+      scholarship opportunities.
+    </p>
+    <button class="btn-primary" onclick="location.href='#contact'">
+      Start Your Journey
+    </button>
+  </div>
+</section>
+
+
+  <!-- About Us -->
+  <section id="about">
+    <h2 class="section-title">Helping You Achieve Your Global Education Goals</h2>
+    <p class="section-text">Zipline Educational Consultancy Pvt. Ltd., located in Dillibazar, Kathmandu, Nepal, is dedicated to guiding students toward successful academic futures in top global destinations like USA, UK, Australia, Canada, and more.</p>
+    <div class="grid-3">
+      <div class="card">
+        <h3><ion-icon name="checkmark-circle-outline"></ion-icon> Strong university partnerships</h3>
+        <p>We have established solid collaborations with leading universities worldwide to ensure you get the best opportunities.</p>
+      </div>
+      <div class="card">
+        <h3><ion-icon name="checkmark-circle-outline"></ion-icon> Personalized counseling & support</h3>
+        <p>Our experts provide individualized counseling and document assistance tailored to your unique goals.</p>
+      </div>
+      <div class="card">
+        <h3><ion-icon name="checkmark-circle-outline"></ion-icon> High visa success rate</h3>
+        <p>We help you prepare strong applications that maximize your chances of visa approval and smooth transition.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+<section id="services">
+  <h2 class="section-title">Our Services</h2>
+  <p class="section-text">Start your journey with Zipline through our expert study abroad assistance, visa documentation, interview preparation, and personalized university selection services.</p>
+  <div class="grid-3" style="grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 2rem;">
+    <article class="card">
+      <h3>Study Abroad Assistance</h3>
+      <p>Free consultations with our experienced team guiding you to top universities with scholarship opportunities worldwide.</p>
+    </article>
+    <article class="card">
+      <h3>Visa Documentation Support</h3>
+      <p>Comprehensive step-by-step visa application help with a high approval rate.</p>
+    </article>
+    <article class="card">
+      <h3>Mock Interview & Coaching</h3>
+      <p>Boost your confidence with our mock interview sessions and personalized coaching.</p>
+    </article>
+    <article class="card">
+      <h3>University & Course Selection</h3>
+      <p>Tailored advice to help you pick the best university and courses aligned with your ambitions.</p>
+    </article>
+    <article class="card">
+      <h3>Scholarship Guidance</h3>
+      <p>Expert help to find and apply for scholarships that match your profile and study goals, maximizing your chances of funding.</p>
+    </article>
+    <article class="card">
+      <h3>Pre-Departure Orientation</h3>
+      <p>Comprehensive sessions covering travel tips, cultural adjustment, accommodation, and student life to prepare you for a smooth transition abroad.</p>
+    </article>
+  </div>
+</section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <h2 class="section-title">What Our Students Say</h2>
+    <p class="section-text">Discover testimonials from students admitted to top universities worldwide through Zipline.</p>
+    <div class="swiper mySwiper" style="padding: 2rem 0;">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide card">
+          <p>“Thanks to Zipline, I got admitted to the University of Roehampton with scholarship. Their guidance was exceptional.”</p>
+          <strong>- Rohini Raj Puri (UK - University of Roehampton)</strong>
+        </div>
+        <div class="swiper-slide card">
+          <p>“I couldn’t have asked for better guidance while applying to Coventry University. Zipline handled everything smoothly.”</p>
+          <strong>- Alance Bhandari (UK - University of West London)</strong>
+        </div>
+        <div class="swiper-slide card">
+          <p>“The whole admission and visa process for UWS was made easy by Zipline. Grateful for their professional team.”</p>
+          <strong>- Nisha Acharya (UK - University of the West of Scotland)</strong>
+        </div>
+        <div class="swiper-slide card">
+          <p>“Zipline helped me choose the right course and university in London. Very supportive and trustworthy.”</p>
+          <strong>- Punam Tamang (UK - University of West London)</strong>
+        </div>
+        <div class="swiper-slide card">
+          <p>“From application to visa, Zipline made everything stress-free. I got into SUNY Brockport with a partial scholarship.”</p>
+          <strong>- Raunak KC (USA - SUNY Brockport)</strong>
+        </div>
+        <div class="swiper-slide card">
+          <p>“Thank you Zipline for helping me get into SUNY Brockport. Their scholarship advice saved me a lot!”</p>
+          <strong>- Prejina Limbu (USA - SUNY Brockport)</strong>
+        </div>
+        <div class="swiper-slide card">
+          <p>“I was confused about choosing the right U.S. university. Zipline made everything clear and got me into Brockport.”</p>
+          <strong>- Ashmi Bista (USA - SUNY Brockport)</strong>
+        </div>
+        
+        <div class="swiper-slide card">
+          <p>“My dream to study Computer Science in the USA came true because of Zipline. Highly recommend them.”</p>
+          <strong>- Rojan Banjara (USA - Dakota State University)</strong>
+        </div>
+
+</style>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog">
+    <h2 class="section-title">Latest News & Updates</h2>
+    <div class="grid-3">
+      <article class="card">
+  <a href="top-countries.html" style="text-decoration: none; color: inherit; display: block;">
+    <h3>Top 5 Countries for Nepalese Students in 2025</h3>
+    <small>01 July, 2025 | 8 Comments</small>
+    <p>Discover the best countries for Nepalese students to study abroad in 2025.</p>
+  </a>
+</article>
+
+     <article class="card">
+  <a href="how-to-get-scholarships.html"  style="text-decoration: none; color: inherit; display: block;">
+    <h3>How to Get Scholarships for US Universities</h3>
+    <small>20 June, 2025 | 12 Comments</small>
+    <p>Learn tips and tricks to secure scholarships for universities in the United States.</p>
+  </a>
+</article>
+
+      <article class="card">
+        <h3>Student Visa Tips for Australia 2025</h3>
+        <small>15 June, 2025 | 5 Comments</small>
+        <p>Essential visa tips for students planning to study in Australia in 2025.</p>
+      </article>
+    </div>
+  </section>
+
+<!-- Contact -->
+<section id="contact" style="background:#0f4c81; color:#fff; padding:4rem 2rem; text-align:center;">
+  <h2>Start Your Study Abroad Journey With Us!</h2>
+  <p>
+    📞 Phone:
+    <a href="tel:+9779851244160" style="color:#fff; text-decoration: underline;">+977 9851244160</a><br />
+    ✉️ Email:
+    <a href="mailto:ziplineadmission@gmail.com" style="color:#fff; text-decoration: underline;">ziplineadmission@gmail.com</a>
+  </p>
+
+<!-- Social Media Links (horizontal) -->
+<div style="margin: 1.5rem 0; display: flex; justify-content: center; gap: 1.5rem;">
+  <a href="https://www.facebook.com/ziplineeducation" target="_blank" style="color: #fff; font-size: 1.5rem;">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://www.instagram.com/ziplineeducation/" target="_blank" style="color: #fff; font-size: 1.5rem;">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.tiktok.com/@zipline.global" target="_blank" style="color: #fff; font-size: 1.5rem;">
+    <i class="fab fa-tiktok"></i>
+  </a>
+</div>
+
+  <button class="btn-primary" onclick="location.href='mailto:ziplineadmission@gmail.com'">Contact Us</button>
+</section>
+
+
+</main>
+
+<footer>
+  <p>© 2024-25 Zipline Educational Consultancy Pvt Ltd. All rights reserved.</p>
+  <p>Designed & Developed By <a href="https://www.bheshrajbastola.com.np" target="_blank" rel="noopener noreferrer">Bhesh Raj Bastola</a></p>
+</footer>
+
+<!-- SwiperJS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.mySwiper', {
+    loop: true,
+    autoplay: { delay: 4000 },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+<script>
+  function toggleMenu() {
+    document.getElementById("navbar").classList.toggle("show");
+  }
+</script>
+
+
+
+<script>
+  // Smooth scroll & clean URL (e.g., /about instead of #about)
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const id = this.getAttribute('href').substring(1);
+      const target = document.getElementById(id);
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop - 60,
+          behavior: 'smooth'
+        });
+        // Update URL to /about instead of #about
+        history.pushState(null, '', '/' + id);
+      }
+    });
+  });
+
+  // On page load, scroll to section if URL is like /about
+  window.addEventListener('DOMContentLoaded', () => {
+    const path = window.location.pathname.slice(1); // remove leading "/"
+    const section = document.getElementById(path);
+    if (section) {
+      setTimeout(() => {
+        window.scrollTo({
+          top: section.offsetTop - 60,
+          behavior: 'smooth'
+        });
+      }, 100);
+    }
+  });
+</script>
+
+
+
+
+
+
+<script>
+  // Disable Right Click
+  document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+  });
+
+  // Disable Keyboard Shortcuts (F12, Ctrl+Shift+I/J/C, Ctrl+U)
+  document.addEventListener("keydown", function (e) {
+    if (
+      e.key === "F12" ||
+      (e.ctrlKey && e.shiftKey && ["I", "J", "C"].includes(e.key.toUpperCase())) ||
+      (e.ctrlKey && e.key.toUpperCase() === "U")
+    ) {
+      e.preventDefault();
+    }
+  });
+
+  //Optional: Detect DevTools opened via resize trick (advanced but still bypassable)
+  let devtoolsOpen = false;
+  const threshold = 160;
+  setInterval(() => {
+    if (
+      window.outerWidth - window.innerWidth > threshold ||
+      window.outerHeight - window.innerHeight > threshold
+    ) {
+      if (!devtoolsOpen) {
+        alert("Developer Tools are not allowed!");
+        devtoolsOpen = true;
+        window.location.reload();
+      }
+    } else {
+      devtoolsOpen = false;
+    }
+  }, 1000);
+</script>
+
+<a href="https://wa.me/9779851244160" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+</style>
+
+
+</body>
+</html>
+
+
