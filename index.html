@@ -277,24 +277,6 @@
       e.preventDefault();
     }
   });
-
-  //Optional: Detect DevTools opened via resize trick (advanced but still bypassable)
-  let devtoolsOpen = false;
-  const threshold = 160;
-  setInterval(() => {
-    if (
-      window.outerWidth - window.innerWidth > threshold ||
-      window.outerHeight - window.innerHeight > threshold
-    ) {
-      if (!devtoolsOpen) {
-        alert("Developer Tools are not allowed!");
-        devtoolsOpen = true;
-        window.location.reload();
-      }
-    } else {
-      devtoolsOpen = false;
-    }
-  }, 1000);
 </script>
 
 <a href="https://wa.me/9779851244160" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
